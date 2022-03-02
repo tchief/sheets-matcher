@@ -1,4 +1,5 @@
 import { getProposals, getRequests } from "./sheets";
+import { locationTranslations } from "./translations";
 import { Match, matchesToString, Request, Proposal } from "./types";
 
 export const getMatches = async (): Promise<Match[]> => {
@@ -17,10 +18,6 @@ export const getMatches = async (): Promise<Match[]> => {
     return matches;
 };
 
-const locationTranslations = {
-    Poland: ["Польша", "Польща"],
-    Wroclaw: ["Вроцлав"],
-};
 const matchLocation = (request: Request, proposal: Proposal): boolean => {
     if (
         request.city === proposal.city ||
