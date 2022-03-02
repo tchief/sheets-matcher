@@ -27,6 +27,9 @@
     },
     "homepage": "https://github.com/neumanf/grammy-vercel-boilerplate#readme",
     "dependencies": {
+        "@grammyjs/ratelimiter": "^1.1.4",
+        "@types/google-spreadsheet": "^3.1.5",
+        "google-spreadsheet": "^3.2.0",
         "grammy": "^1.6.1"
     },
     "devDependencies": {
