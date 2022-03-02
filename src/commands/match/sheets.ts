@@ -7,7 +7,7 @@ const REQUEST_SPREADSHEET_ID = process.env.REQUESTS_SPREADSHEET_ID!;
 const REQUEST_SHEET_ID = process.env.REQUESTS_SHEET_ID!;
 const PROPOSAL_SPREADSHEET_ID = process.env.PROPOSALS_SPREADSHEET_ID!;
 const PROPOSAL_SHEET_ID = process.env.PROPOSALS_SHEET_ID!;
-const SUGGESTIONS_COLUMN = process.env.SUGGESTIONS_COLUMN!;
+const SUGGESTIONS_COLUMN = "V";
 
 export const getRequests = () => getRows<Request>(mapRowToRequest, CLIENT_EMAIL, PRIVATE_KEY, REQUEST_SPREADSHEET_ID, REQUEST_SHEET_ID);
 export const getProposals = () => getRows<Proposal>(mapRowToProposal, CLIENT_EMAIL, PRIVATE_KEY, PROPOSAL_SPREADSHEET_ID, PROPOSAL_SHEET_ID);
